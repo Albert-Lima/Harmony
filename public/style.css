@@ -1,0 +1,521 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap');/*Lexend Exa*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+:root{
+    --var-FontLogo: "Lexend Exa", sans-serif;
+    --var-fontMain: "Inter", sans-serif;
+    --var-ColorBlack: #010101;
+    --var-ClearYellow: #D6913E;
+    --var-DarkNav: #796954;
+    --var-DarkBorder: #534B2F;
+    --var-SoftBackground: #F5E4B8;
+    --var-SoftText: #8D8064;
+}
+
+/*estilização topo*/
+header{
+    height: 80px;
+    width: 100%;
+    background-color: var(--var-ColorBlack);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.LogoHeader{
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.LogoHeader p{
+    font-family: var(--var-FontLogo);
+    font-size: 15pt;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+}
+.MusicLogoHeader{
+    color: rgb(241, 241, 241);
+    text-shadow: 0px 0px 7px rgb(0, 0, 0);
+}
+.HarmonyLogoHeader{
+    color: var(--var-ClearYellow);
+    text-shadow: 0px 0px 5px rgb(0, 0, 0);
+}
+.LogoHeader div {
+    height: 50px;
+    width: max-content;
+    position: relative;
+    left: -120px;
+    top: -5px;
+}
+.LogoHeader div img{
+    height: 100%;
+    width: auto;
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.111));
+}
+.nav_header{
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav_header a{
+    text-decoration: none;
+    color: var(--var-DarkNav);
+    font-size: 12pt;
+    font-weight: 600;
+    font-family: var(--var-FontLogo);
+}
+.section_top{
+    box-shadow: inset 0px 70px 100px 10px black;
+    height: calc(100vh - 80px);
+    background-image: url("img/pexels-lanius-2118045.jpg");
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.social_links{
+    width: max-content;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    position: absolute;
+    left: 50px;
+}
+.iconSocial{
+    height: 30px;
+    width: auto;
+    filter: drop-shadow(0px 0px 8px rgb(0, 0, 0));
+}
+.cardCTA{
+    width: 600px;
+    height: 400px;
+    margin-left: 80px;
+    background-color: rgba(0, 0, 0, 0.718);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px
+}
+.textCardTop{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.textCardTop h1{
+    font-family: var(--var-FontLogo);
+    font-size: 20pt;
+    font-weight: 700;
+    color: var(--var-ClearYellow);
+}
+.textCardTop p{
+    font-family: var(--var-fontMain);
+    font-size: 15pt;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+}
+.bttCTA{
+    height: 40px;
+    width: 250px;
+    background-color: transparent;
+    border: 2px solid var(--var-DarkBorder);
+    color: white;
+    font-family: var(--var-fontMain);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.bttCTA:hover{
+    background-color: rgba(0, 0, 0, 0.608);
+}
+@keyframes scrolldown {
+    to{
+        transform: translateY(30px);
+    }
+}
+.scrollDown{
+    animation-name: scrolldown;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    position: relative;
+    top: 38vh;
+    left: -325px;
+    cursor: pointer;
+}
+.bar1{
+    width: 50px;
+    height: 2px;
+    background-color: white;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.164);
+    transform: rotate(30deg);
+}
+.bar2{
+    margin-left: -6px;
+    width: 50px;
+    height: 2px;
+    background-color: white;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.164);
+    transform: rotate(-30deg);
+}
+
+
+/*estilização CTA dos cursos oferecidos*/
+.CTACurso{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 20vh;
+    background-color: var(--var-SoftBackground);
+}
+.CTACurso h2{
+    color: var(--var-ClearYellow);
+    font-size: 20pt;
+    font-family: var(--var-FontLogo);
+}
+.CTACurso p{
+    max-width: 700px;
+    color: var(--var-SoftText);
+    text-align: center;
+    font-family: var(--var-fontMain);
+    font-size: 15pt;
+}
+
+.linksClass{
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--var-ColorBlack);
+}
+.cardLINK{
+    width: 300px;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.cardLinkTop{
+    transform: rotate(-45deg);
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    border-right: 10px solid  var(--var-ClearYellow);
+    border-top: 10px solid var(--var-ClearYellow);
+    border-bottom: 10px solid var(--var-SoftBackground);
+    border-left: 10px solid var(--var-SoftBackground);
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.boxIconClass{
+    transform: rotate(45deg);
+    width: 195px;
+    height: 195px;
+    background-color: var(--var-SoftBackground);
+    border-radius: 100%;
+    position: relative;
+    top: 7px;
+    left: -7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.buttonCardLink{
+    height: 30px;
+    width: 100%;
+    border: 2px solid var(--var-DarkBorder);
+    background-color: transparent;
+    color: white;
+    font-size: 10pt;
+    font-family: var(--var-fontMain);
+    cursor: pointer;
+}
+.cardLINK h2{
+    color: var(--var-ClearYellow);
+    font-size: 20pt;
+    font-family: var(--var-fontMain);
+}
+.cardLINK p{
+    color: white;
+    font-family: var(--var-fontMain);
+    font-size: 15pt;
+    text-align: center;
+}
+
+.LastCTA{
+    height: 250px;
+    background-color: var(--var-SoftBackground);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.LastCTA h2{
+    font-family: var(--var-FontLogo);
+    font-size: 20pt;
+    color: var(--var-SoftText);
+}
+
+
+/*estilização a partir do footer*/
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--var-ColorBlack);
+}
+.topFooter{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.topFooter h3{
+    font-size: 20pt;
+    font-family: var(--var-FontLogo);
+    font-weight: 400;
+    color: var(--var-ClearYellow)
+}
+footer form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 500px;
+    gap: 10px;
+}
+
+.infoLead{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    width: 500px;
+    border: 2px solid var(--var-ClearYellow);
+}
+.infoLead div{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.infoLead div img{
+    height: 40px;
+}
+.infoLead input{
+    width: 435px;
+    height: 50px;
+    color: white;
+    font-family: var(--var-FontLogo);
+    font-size: 15pt;
+    background: none;
+    border: none;
+    outline: none;
+    padding-left: 15px;
+}
+/*----------------------estilização do input em vários navegadores diferentes-----------------------------*/
+  /* Para navegadores WebKit (Chrome, Safari, Edge) */
+  .infoLead input::-webkit-input-placeholder {
+    color: rgb(169, 169, 169);
+    font-family: var(--var-FontLogo);
+    font-size: 15pt;
+  }
+  
+  /* Para Firefox */
+  .infoLead input::-moz-placeholder {
+    color: rgb(169, 169, 169);
+    font-family: var(--var-FontLogo);
+    font-size: 15pt;
+  }
+  
+  /* Para versões antigas do Firefox */
+  .infoLead input:-moz-placeholder {
+    color: rgb(169, 169, 169);
+    font-family: var(--var-FontLogo);
+    font-size: 15pt;
+  }
+  
+  /* Para o Internet Explorer 10+ */
+  .infoLead input:-ms-input-placeholder {
+    color: rgb(169, 169, 169);
+    font-family: var(--var-FontLogo);
+    font-size: 15pt;
+  }
+  
+  /* Estilo padrão para navegadores modernos */
+  .infoLead input::placeholder {
+    color: rgb(169, 169, 169);
+    font-family: var(--var-FontLogo);
+    font-size: 15pt;
+  }
+
+footer form textarea{
+    width: calc(100% - 20px);
+    height: 200px;
+    background: none;
+    outline: none;
+    border: 2px solid var(--var-ClearYellow);
+    padding: 10px;
+    color: white;
+    font-size: 12pt;
+    font-family: var(--var-fontMain);
+}
+.bttFormSubmit{
+    width: calc(100% + 4px);
+    height: 50px;
+    background-color: var(--var-ClearYellow);
+    border: none;
+    font-size: 15pt;
+    font-weight: 600;
+    font-family: var(--var-fontMain);
+    color: var(--var-DarkBorder);
+    cursor: pointer;
+}
+.CopyRight{
+    height: 90px;
+    background-color: var(--var-SoftBackground);
+    width: 100%;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.CopyRight p{
+    font-family: var(--var-fontMain);
+    font-weight: 600;
+    font-size: 15pt;
+    color: black;
+}
+.CopyRight p a{
+    color: black;
+}
+
+
+
+/*-------------------------responsividade-------------------------------------------------------------------------------------*/
+@media (max-width: 1090px){
+    .linksClass{
+        height: max-content;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        flex-direction: column;
+        gap: 70px;
+    }
+    .cardLINK{
+        gap: 30px;
+    }
+}
+@media (max-width: 830px){
+    .cardCTA{
+        margin-left: 0px;
+    }
+    .social_links{
+        left: auto;
+        top: 90px;
+        right: 60px;
+        flex-direction: row;
+    }
+    .scrollDown{
+        position: absolute;
+        left: auto;
+        top: 90vh;
+    }
+}
+@media (max-width: 640px){
+    .cardCTA{
+        width: 90%;
+    }
+    .textCardTop h1{
+        font-size: 15pt;
+    }
+    .CTACurso{
+        height: max-content;
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+    .CTACurso h2{
+        text-align: center;
+        max-width: 90%;
+        font-size: 15pt;
+    }
+    .CTACurso p{
+        font-size: 12pt;
+        max-width: 90%;
+    }
+    .LastCTA h2{
+        font-size: 15pt;
+        max-width: 90%;
+        text-align: center;
+        margin: auto;
+    }
+}
+@media (max-width: 540px){
+    header{
+        justify-content: center;
+    }
+    .LogoHeader{
+        scale: 1;
+        justify-content: end;
+        margin-left: 10px;
+    }
+    .nav_header{
+        width: max-content;
+        margin-right: 20px;
+        gap: 10px;
+    }
+    .social_links{
+        right: 20px;
+    }
+    .textCardTop h1{
+        max-width: 90%;
+        text-align: center;
+    }
+    footer form{
+        width: 90%;
+    }
+    .infoLead{
+        width: 100%;
+    }
+    .infoLead input{
+        width: 70%;
+    }
+    .CopyRight p{
+        font-size: 12pt;
+    }
+}
