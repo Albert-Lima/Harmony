@@ -24,6 +24,10 @@ header{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
 }
 .LogoHeader{
     width: 300px;
@@ -84,6 +88,7 @@ header{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-top: 80px;
 }
 .social_links{
     width: max-content;
@@ -161,7 +166,7 @@ header{
     width: 70px;
     height: 70px;
     position: relative;
-    top: 38vh;
+    top: 30vh;
     left: -325px;
     cursor: pointer;
 }
@@ -454,7 +459,7 @@ footer form textarea{
     .scrollDown{
         position: absolute;
         left: auto;
-        top: 90vh;
+        top: 87vh;
     }
 }
 @media (max-width: 640px){
@@ -513,7 +518,7 @@ footer form textarea{
         width: 100%;
     }
     .infoLead input{
-        width: 70%;
+        width: 100%;
     }
     .CopyRight p{
         font-size: 12pt;
