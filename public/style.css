@@ -194,7 +194,9 @@ header{
     align-items: center;
     justify-content: center;
     gap: 20px;
-    height: 20vh;
+    height: max-content;
+    padding-top: 30px;
+    padding-bottom: 30px; 
     background-color: var(--var-SoftBackground);
 }
 .CTACurso h2{
